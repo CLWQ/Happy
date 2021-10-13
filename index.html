@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/square-loader.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script>
+		document.documentElement.className = 'js';
+	</script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            background: url(images/bg.gif) no-repeat;
+            background-size: cover;
+        }
+        .clock {
+            margin-top: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 300px;
+            color: #fff;
+            text-shadow: 1px 1px 50px lightgray;
+        }
+        .words {
+            height: 150px;
+            width: 1400px;
+            margin: 50px auto;
+        }
+        .words ul li {
+            color: #fff;
+            display: none;
+            float: left;
+            font-size: 150px;
+            height: 150px;
+            width: 150px;
+            line-height: 150px;
+            text-align: center;
+            font-weight: 700;
+            text-shadow: 1px 1px 20px lightgray;
+            margin-left: 20px;
+        }
+        .focus {
+            display: none;
+            width: 800px;
+            height: 600px;
+            background-color: #fff;
+            margin: 65px auto;
+        }
+        p {
+            color: #fff;
+            display: none;
+            height: 800px;
+            width: 1200px;
+            line-height: 800px;
+            text-align: center;
+            font-size: 100px;
+            font-weight: 700;
+            text-shadow: 1px 1px 20px lightgray;
+            margin: 0 auto;
+        }
+        .view {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <audio controls type="audio/mpeg" style="width: 100px; height: 30px; outline: none;">
+        <source src="audio/CMJ - 告白之夜（纯音乐）.mp3">
+    </audio>
+    <div class="clock"></div>
+    <div class="words">
+        <ul>
+            <li>彭</li>
+            <li>小</li>
+            <li>姐</li>
+            <li>，</li>
+            <li>生</li>
+            <li>日</li>
+            <li>快</li>
+            <li>乐</li>
+        </ul>
+    </div>
+    <div class="focus">
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="2000">
+                <img src="images/bd1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src="images/bd2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src="images/bd3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src="images/bd4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src="images/bd5.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+    </div>
+    <p>
+        重头戏要来了，不要眨眼偶
+    </p>
+    <div class="view">
+        <header class="header">
+            <nav class="demos">
+                <a class="demos__item demos__item--current" href="index.html">Default</a>
+                <a class="demos__item" href="index2.html">Beauty</a>
+            </nav>
+        </header>
+        <section class="page page--mover">
+            <div class="la-square-loader"><div></div></div>
+        </section>
+        <div class="title-wrap">
+            <h1 class="title title--main">Ms<em>!</em>Peng</h1>
+            <p class="title title--sub"></p>
+
+        </div>
+        <section class="page page--static">
+            <div class="page__title">
+                <h2 class="page__title-main">欢迎来到彭小姐的照片墙</h2>
+                <p class="page__title-sub">Recreating the effect seen on the <a href="http://www.takeitapp.co/en" target="_blank">takeit</a> website</p>
+            </div>
+            <ul class="grid">
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_1.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_2.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_3.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_4.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_5.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_6.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_7.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_8.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_9.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_10.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_11.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_12.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_13.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_14.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_15.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_16.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_17.jpg" alt="Some image" />
+                    </a>
+                </li>
+                <li class="grid__item">
+                    <a class="grid__link" href="#">
+                        <img class="grid__img" src="upload/wall_18.jpg" alt="Some image" />
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <div class="device">
+            <div class="device__screen"></div>
+        </div>
+        <button id="showgrid" class="button button--view" aria-label="Show me more">
+            <svg width="100%" height="100%" viewBox="0 0 310 177" preserveAspectRatio="xMidYMid meet">
+                <path fill="#FFFFFF" d="M159.875,174.481L306.945,27.41c2.93-2.929,2.93-7.678,0-10.606L292.803,2.661c-1.406-1.407-3.314-2.197-5.303-2.197c-1.989,0-3.896,0.79-5.303,2.197L154.572,130.287L26.946,2.661c-1.406-1.407-3.314-2.197-5.303-2.197c-1.989,0-3.897,0.79-5.303,2.197L2.197,16.804C0.733,18.269,0,20.188,0,22.107s0.732,3.839,2.197,5.303l147.071,147.071C152.197,177.411,156.945,177.411,159.875,174.481L159.875,174.481z" />
+            </svg>
+        </button>
+    </div><!-- /view -->
+
+    <script>
+        $('.carousel').carousel();
+        var i = 5;
+        var timer = setInterval(function () {
+            if (i == 0) {
+                $('.clock').hide();
+                var body = document.body;
+                body.style.background = 'url(images/bg2.gif) no-repeat';
+                body.style.backgroundSize = 'cover';
+                var focus = document.querySelector('.focus');
+                focus.style.display = 'block';
+                words();
+                clearInterval(timer);
+            }
+            $('.clock').html(i);
+            i--;
+        }, 1000);
+        var j = 0;
+
+        function words() {
+            setInterval(function () {
+                if (j == 8) {
+                    var body = document.body;
+                    body.style.background = 'none';
+                    body.style.backgroundColor = 'black';
+                    var focus = document.querySelector('.focus');
+                    focus.style.display = 'none';
+                    var words = document.querySelector('.words');
+                    words.style.display = 'none';
+                    var pword = document.querySelector('p');
+                    pword.style.display = 'block';
+                    showPictrue();
+                    clearInterval(words);
+                }
+                $('.words ul li').eq(j).slideDown();
+                j++;
+            }, 2000)
+        }
+        var k = 0;
+        function showPictrue(){
+            setInterval(function(){
+                if(k == 7){
+                    var body = document.body;
+                    body.style.backgroundColor = 'white';
+                    var pword = document.querySelector('p');
+                    pword.style.display = 'none';
+                    var view = document.querySelector('.view');
+                    view.style.display = 'block';
+                }
+                k++;
+            },1000)
+        }
+    </script>
+    <script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
